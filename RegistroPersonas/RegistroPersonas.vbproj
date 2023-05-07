@@ -100,6 +100,8 @@
     <Compile Include="Ciudad.vb">
       <DependentUpon>ADOConexion.tt</DependentUpon>
     </Compile>
+    <Compile Include="entidades\tbl_Ciudades.vb" />
+    <Compile Include="entidades\tbl_Persona.vb" />
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -107,10 +109,17 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="formularios\FrmCiudad.Designer.vb">
+      <DependentUpon>FrmCiudad.vb</DependentUpon>
+    </Compile>
+    <Compile Include="formularios\FrmCiudad.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
       <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="My Project\Resources.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -130,6 +139,12 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="formularios\FrmCiudad.resx">
+      <DependentUpon>FrmCiudad.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
@@ -168,9 +183,14 @@
       <DependentUpon>ADOConexion.edmx</DependentUpon>
       <LastGenOutput>ADOConexion.vb</LastGenOutput>
     </Content>
+    <None Include="Resources\BtnGuardar.png" />
+    <None Include="Resources\BtnEditar.png" />
+    <None Include="Resources\BtnBorrar.png" />
+    <None Include="Resources\BtnAgregar.png" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
