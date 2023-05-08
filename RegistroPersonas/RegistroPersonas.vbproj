@@ -100,6 +100,8 @@
     <Compile Include="Ciudad.vb">
       <DependentUpon>ADOConexion.tt</DependentUpon>
     </Compile>
+    <Compile Include="dao\dCiudad.vb" />
+    <Compile Include="dao\Module1.vb" />
     <Compile Include="entidades\tbl_Ciudades.vb" />
     <Compile Include="entidades\tbl_Persona.vb" />
     <Compile Include="Form1.vb">
