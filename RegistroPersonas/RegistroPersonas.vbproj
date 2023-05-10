@@ -82,26 +82,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ADOConexion.Context.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ADOConexion.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ADOConexion.Designer.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ADOConexion.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="ADOConexion.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ADOConexion.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Ciudad.vb">
-      <DependentUpon>ADOConexion.tt</DependentUpon>
-    </Compile>
     <Compile Include="dao\dCiudad.vb" />
-    <Compile Include="dao\Module1.vb" />
+    <Compile Include="DSDBPrueba26.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSDBPrueba26.xsd</DependentUpon>
+    </Compile>
     <Compile Include="entidades\tbl_Ciudades.vb" />
     <Compile Include="entidades\tbl_Persona.vb" />
     <Compile Include="Form1.vb">
@@ -133,12 +119,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Persona.vb">
-      <DependentUpon>ADOConexion.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sysdiagrams.vb">
-      <DependentUpon>ADOConexion.tt</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Form1.resx">
@@ -155,12 +135,16 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="ADOConexion.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ADOConexion.Designer.vb</LastGenOutput>
-    </EntityDeploy>
-    <None Include="ADOConexion.edmx.diagram">
-      <DependentUpon>ADOConexion.edmx</DependentUpon>
+    <None Include="DSDBPrueba26.xsc">
+      <DependentUpon>DSDBPrueba26.xsd</DependentUpon>
+    </None>
+    <None Include="DSDBPrueba26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSDBPrueba26.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DSDBPrueba26.xss">
+      <DependentUpon>DSDBPrueba26.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
@@ -175,16 +159,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ADOConexion.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>ADOConexion.Context.vb</LastGenOutput>
-      <DependentUpon>ADOConexion.edmx</DependentUpon>
-    </Content>
-    <Content Include="ADOConexion.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ADOConexion.edmx</DependentUpon>
-      <LastGenOutput>ADOConexion.vb</LastGenOutput>
-    </Content>
     <None Include="Resources\BtnGuardar.png" />
     <None Include="Resources\BtnEditar.png" />
     <None Include="Resources\BtnBorrar.png" />

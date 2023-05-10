@@ -1,9 +1,12 @@
 ﻿Public Class tbl_Ciudades
     Dim _idCiudad As Integer
-    Dim _nombreCiudad As Integer
+    Dim _nombreCiudad As String
     Dim _estado As Boolean
 
-    Public Sub New(idCiudad As Integer, nombreCiudad As Integer, estado As Boolean)
+    Public Sub New()
+
+    End Sub
+    Public Sub New(idCiudad As Integer, nombreCiudad As String, estado As Boolean)
         _idCiudad = idCiudad
         _nombreCiudad = nombreCiudad
         _estado = estado
@@ -18,11 +21,11 @@
         End Set
     End Property
 
-    Public Property NombreCiudad As Integer
+    Public Property NombreCiudad As String
         Get
             Return _nombreCiudad
         End Get
-        Set(value As Integer)
+        Set(value As String)
             _nombreCiudad = value
         End Set
     End Property
