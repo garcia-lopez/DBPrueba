@@ -59,6 +59,7 @@ Partial Class Form1
         'FormularioToolStripMenuItem
         '
         Me.FormularioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CiudadToolStripMenuItem, Me.PersonaToolStripMenuItem})
+        Me.FormularioToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.FormularioToolStripMenuItem.Name = "FormularioToolStripMenuItem"
         Me.FormularioToolStripMenuItem.Size = New System.Drawing.Size(95, 24)
         Me.FormularioToolStripMenuItem.Text = "Formulario"
@@ -67,14 +68,14 @@ Partial Class Form1
         '
         Me.CiudadToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
         Me.CiudadToolStripMenuItem.Name = "CiudadToolStripMenuItem"
-        Me.CiudadToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.CiudadToolStripMenuItem.Size = New System.Drawing.Size(143, 26)
         Me.CiudadToolStripMenuItem.Text = "Ciudad"
         '
         'PersonaToolStripMenuItem
         '
         Me.PersonaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
         Me.PersonaToolStripMenuItem.Name = "PersonaToolStripMenuItem"
-        Me.PersonaToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.PersonaToolStripMenuItem.Size = New System.Drawing.Size(143, 26)
         Me.PersonaToolStripMenuItem.Text = "Persona"
         '
         'Form1
