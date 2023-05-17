@@ -10,7 +10,7 @@
         Dim dCiudad As New dCiudad
         DvGRegistros.DataSource = dCiudad.MostrarRegistros.Tables(0)
         DvGRegistros.Refresh()
-        GbRegistros.Text = "Registros almacenados: " & DvGRegistros.Rows.Count
+        GbRegistros.Text = "Registros almacenados: " & DvGRegistros.Rows.Count - 1
     End Sub
 
 
@@ -90,5 +90,14 @@
         txtNombre.Clear()
         txt_id.Clear()
 
+    End Sub
+
+    Private Sub BtnBuscar_Click(sender As Object, e As EventArgs) Handles BtnBuscar.Click
+        Dim ds As New DataSet
+        Dim dao As New dCiudad
+        ds = dao.BuscarXNombre(TxtValor.Text.Trim)
+        DvGRegistros.DataSource = ds.Tables(0)
+        DvGRegistros.Refresh()
+        GbRegistros.Text = "Registros encontrados: " & DvGRegistros.Rows.Count - 1
     End Sub
 End Class

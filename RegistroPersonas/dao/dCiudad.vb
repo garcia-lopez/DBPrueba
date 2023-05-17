@@ -102,4 +102,22 @@ Public Class dCiudad
         Return resp
     End Function
 
+    Public Function BuscarXNombre(ByVal nombre As String) As DataSet
+        Dim ds As New DataSet
+
+        Try
+            nombre = nombre + "%"
+            Dim tsql As String = "Select * from ciudad where nombre like @nombre"
+            Dim conn As New SqlConnection(strConexion)
+            Dim da As New SqlDataAdapter(tsql, conn)
+            da.SelectCommand.Parameters.AddWithValue("@nombre", nombre)
+            da.Fill(ds)
+
+        Catch ex As Exception
+            MsgBox("Error al intentar buscar el registro ", MsgBoxStyle.Critical, "Ciudades")
+        End Try
+
+        Return ds
+    End Function
+
 End Class

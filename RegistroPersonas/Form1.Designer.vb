@@ -38,7 +38,8 @@ Partial Class Form1
         Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ArchivoToolStripMenuItem, Me.FormularioToolStripMenuItem})
         Me.MenuStrip2.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip2.Name = "MenuStrip2"
-        Me.MenuStrip2.Size = New System.Drawing.Size(800, 28)
+        Me.MenuStrip2.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
+        Me.MenuStrip2.Size = New System.Drawing.Size(600, 24)
         Me.MenuStrip2.TabIndex = 1
         Me.MenuStrip2.Text = "MenuStrip2"
         '
@@ -46,14 +47,14 @@ Partial Class Form1
         '
         Me.ArchivoToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SalirToolStripMenuItem})
         Me.ArchivoToolStripMenuItem.Name = "ArchivoToolStripMenuItem"
-        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(73, 24)
+        Me.ArchivoToolStripMenuItem.Size = New System.Drawing.Size(60, 20)
         Me.ArchivoToolStripMenuItem.Text = "Archivo"
         '
         'SalirToolStripMenuItem
         '
         Me.SalirToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
         Me.SalirToolStripMenuItem.Name = "SalirToolStripMenuItem"
-        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.SalirToolStripMenuItem.Size = New System.Drawing.Size(96, 22)
         Me.SalirToolStripMenuItem.Text = "Salir"
         '
         'FormularioToolStripMenuItem
@@ -61,32 +62,35 @@ Partial Class Form1
         Me.FormularioToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CiudadToolStripMenuItem, Me.PersonaToolStripMenuItem})
         Me.FormularioToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.FormularioToolStripMenuItem.Name = "FormularioToolStripMenuItem"
-        Me.FormularioToolStripMenuItem.Size = New System.Drawing.Size(95, 24)
+        Me.FormularioToolStripMenuItem.Size = New System.Drawing.Size(77, 20)
         Me.FormularioToolStripMenuItem.Text = "Formulario"
         '
         'CiudadToolStripMenuItem
         '
         Me.CiudadToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
         Me.CiudadToolStripMenuItem.Name = "CiudadToolStripMenuItem"
-        Me.CiudadToolStripMenuItem.Size = New System.Drawing.Size(143, 26)
+        Me.CiudadToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.CiudadToolStripMenuItem.Text = "Ciudad"
         '
         'PersonaToolStripMenuItem
         '
         Me.PersonaToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(234, Byte), Integer), CType(CType(221, Byte), Integer), CType(CType(221, Byte), Integer))
         Me.PersonaToolStripMenuItem.Name = "PersonaToolStripMenuItem"
-        Me.PersonaToolStripMenuItem.Size = New System.Drawing.Size(143, 26)
+        Me.PersonaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.PersonaToolStripMenuItem.Text = "Persona"
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(152, Byte), Integer), CType(CType(151, Byte), Integer), CType(CType(155, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(600, 366)
         Me.Controls.Add(Me.MenuStrip2)
+        Me.IsMdiContainer = True
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form1"
         Me.Text = "Registro Persona"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip2.ResumeLayout(False)
         Me.MenuStrip2.PerformLayout()
         Me.ResumeLayout(False)
