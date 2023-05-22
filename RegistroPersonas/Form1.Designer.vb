@@ -87,7 +87,7 @@ Partial Class Form1
         Me.ClientSize = New System.Drawing.Size(600, 366)
         Me.Controls.Add(Me.MenuStrip2)
         Me.IsMdiContainer = True
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.Text = "Registro Persona"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
